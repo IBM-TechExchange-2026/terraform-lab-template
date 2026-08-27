@@ -1,0 +1,41 @@
+# ==============================================================================
+# TechXchange 2026 Lab — Terraform Variables
+# ==============================================================================
+# Instructions:
+#   1. Rename this file to terraform.tfvars
+#   2. Fill in every value marked with TODO
+#   3. Do NOT commit this file to GitHub — it contains your API key
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# IBM Cloud API Key
+# How to find: IBM Cloud Console > Manage > Access (IAM) > API keys > Create
+# ------------------------------------------------------------------------------
+ibmcloud_api_key = "TODO: paste your IBM Cloud API key here"
+
+# ------------------------------------------------------------------------------
+# Resource Group
+# How to find: IBM Cloud Console > Manage > Account > Resource groups
+# ------------------------------------------------------------------------------
+resource_group_name = "TODO: enter your resource group name here"
+
+# ------------------------------------------------------------------------------
+# Unique prefix — used to name all resources
+# Use your initials or a short unique string to avoid naming conflicts
+# Example: "txc-lab-ao"
+# ------------------------------------------------------------------------------
+prefix = "TODO: txc-lab-<your-initials>"
+
+# ------------------------------------------------------------------------------
+# SSH Public Key
+# How to find: run `cat ~/.ssh/id_rsa.pub` in your terminal
+# This key will be used to SSH into your workload VSI and by IBM Concert
+# for OS patching
+# ------------------------------------------------------------------------------
+ssh_public_key = "TODO: paste your SSH public key here (ssh-rsa AAAA...)"
+
+# ------------------------------------------------------------------------------
+# Region & Zone (defaults provided — only change if instructed)
+# ------------------------------------------------------------------------------
+region = "us-east"
+zone   = "us-east-1"

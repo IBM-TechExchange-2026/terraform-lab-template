@@ -42,7 +42,7 @@ resource "ibm_is_security_group_rule" "allow_all_outbound" {
   group     = ibm_is_security_group.lab_sg.id
   direction = "outbound"
   remote    = "0.0.0.0/0"
-  protocol  = "all"
+  protocol  = "any"
 }
 
 ##############################################################################

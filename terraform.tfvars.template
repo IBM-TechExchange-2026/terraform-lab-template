@@ -14,8 +14,7 @@
 ibmcloud_api_key = "TODO: paste your IBM Cloud API key here"
 
 # ------------------------------------------------------------------------------
-# Resource Group
-# How to find: IBM Cloud Console > Manage > Account > Resource groups
+# Resource Group (pre-existing — pre-filled, do not change)
 # ------------------------------------------------------------------------------
 resource_group_name = "txc-lab-2026"
 

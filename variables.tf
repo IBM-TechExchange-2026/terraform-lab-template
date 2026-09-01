@@ -11,7 +11,7 @@ variable "region" {
 }
 
 variable "resource_group_name" {
-  description = "Name of the IBM Cloud resource group to deploy resources into."
+  description = "Name of the pre-existing IBM Cloud resource group to deploy resources into. This has been pre-provisioned for you — do not create a new one."
   type        = string
 }
 

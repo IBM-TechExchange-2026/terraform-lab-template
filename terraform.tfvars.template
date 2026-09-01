@@ -26,12 +26,10 @@ resource_group_name = "txc-lab-2026"
 prefix = "TODO: txc-lab-<your-initials>"
 
 # ------------------------------------------------------------------------------
-# SSH Public Key
-# How to find: run `cat ~/.ssh/id_rsa.pub` in your terminal
-# This key will be used to SSH into your workload VSI and by IBM Concert
-# for OS patching
+# SSH Public Key (pre-filled — shared lab key, do not change)
+# This key is used to SSH into your workload VSI and by IBM Concert for OS patching
 # ------------------------------------------------------------------------------
-ssh_public_key = "TODO: paste your SSH public key here (ssh-rsa AAAA...)"
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC464ik5Kngi1hr7s+2MM9uVV3JhOEarICwbFsI9AjtTPpdpdyPpTwX3eghUMAnPLSEPR4ktcCncmCM37boaBfVnXK5NfWWtJ+r/jbHUXccqe8ntPnZOAR1Wu7LuHDS8HowJZHcrQnbFNv46f2t0w9ND/HzLGyI8P6Idm6Oz5ixjS+GjPzldOdlxOxhHr9QjPEswJvgyI1FCjpdfNpbeqNpN0y9Y/5xTwpbTUOO6oVGg8Ll1ZM9Bz1UQvCMqjcG4Ea5wEZ/7uzakkJX2WDSA1KkhXvPN0n+0Ifiiz5LGL504tsjXxEHCoZ8qeDUgIsMVBhnveFJEjhh137YE+qVcV9oDZqrWYvMiTWq21ff64qTzGV/bWXL9bcHd2H3HacyV3dWSY2NCaCEm+LWK9wNFTZdf0/aS9hY3ES/f0kDd+3J7EKPiVH1MGtZwLK1Az0FAqkOgCAu7Q0xOEoRGJrJs3penFzUFu44HTgeSvLMKV3a6if77DmRa2/rUux13Kj21qa0tsxRXipCPBi1x6iyAkGqOs3pPWZdaCEL6gC91qzE0mXCTgLELI3h7iNTrHMgTR9+jFkUmi6ETHj+fcJ5nc1W3xdNl5NNOl6VstDJzkxHLVOyAKLOQDBUvM9OPfJxafcBR+Sp+CulS5LMxihPL+c1jzizA/2gOnxNH0e+GfpQRQ== txc-lab-2026-shared"
 
 # ------------------------------------------------------------------------------
 # Region & Zone (defaults provided — only change if instructed)

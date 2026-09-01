@@ -8,3 +8,7 @@ terraform.tfstate
 terraform.tfstate.backup
 *.tfplan
 crash.log
+
+# Shared lab SSH key pair — keep the private key secure, never commit it
+txc-lab-2026-shared-key
+txc-lab-2026-shared-key.pub

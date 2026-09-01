@@ -19,11 +19,11 @@ variable "prefix" {
   description = "Short prefix used to name all resources (e.g. your initials: 'txc-lab-<your-initials>')."
   type        = string
 }
-
 variable "ssh_public_key" {
-  description = "Your SSH public key (contents of ~/.ssh/id_rsa.pub or equivalent). Used to access the workload VSI and by IBM Concert for OS patching."
+  description = "Shared lab SSH public key. Pre-populated in terraform.tfvars.template — do not change."
   type        = string
 }
+
 
 variable "zone" {
   description = "Availability zone within the region (e.g. us-south-1)."

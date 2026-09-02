@@ -12,3 +12,14 @@ crash.log
 # Shared lab SSH key pair — keep the private key secure, never commit it
 txc-lab-2026-shared-key
 txc-lab-2026-shared-key.pub
+
+# Instructor-only scripts
+bastion-setup.sh
+
+# Concert workflow zip files — instructor use only
+zip files/
+
+# Instructor and lab guide documents
+CONCERT_LAB_GUIDE.md
+INSTRUCTOR_SETUP_GUIDE.md
+Concert lab pdf/

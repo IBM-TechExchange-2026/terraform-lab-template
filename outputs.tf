@@ -15,5 +15,5 @@ output "vpc_id" {
 
 output "ssh_command" {
   description = "SSH command to connect to your workload VSI from the bastion host."
-  value       = "ssh -i <path-to-your-private-key> root@${ibm_is_floating_ip.workload_fip.address}"
+  value       = "ssh -i <path-to-your-private-key> vpcuser@${ibm_is_floating_ip.workload_fip.address}"
 }

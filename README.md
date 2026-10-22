@@ -125,7 +125,7 @@ ssh -i ~/.ssh/txc-lab-key vpcuser@<workload_vsi_floating_ip>
 
 ## Step 8 — IBM Concert Integration
 
-Once your VSI is running, follow the IBM Concert instructions provided separately to register your environment and trigger the OS scan and patch workflow.
+Once your VSI is running, download the workflow `.zip` packages from the [`workflows/`](workflows/) directory in this repository to your laptop, then follow the IBM Concert lab guide to import, scan, and patch your instance.
 
 ---
 

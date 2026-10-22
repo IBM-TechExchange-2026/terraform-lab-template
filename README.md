@@ -25,8 +25,8 @@ Before starting, make sure you have the following ready:
 | Item | Where to find it |
 |---|---|
 | IBM Cloud API Key | IBM Cloud Console > Manage > Access (IAM) > API keys > Create |
-| Resource Group name | IBM Cloud Console > Manage > Account > Resource groups |
-| SSH public key | Run `cat ~/.ssh/id_rsa.pub` in your terminal |
+| Resource Group name | `txc-lab-2026` (pre-provisioned) |
+| SSH Key Name | `txc-lab-2026-shared-key` (pre-provisioned) |
 
 ---
 
@@ -64,11 +64,11 @@ vi terraform.tfvars
 | Variable | Description |
 |---|---|
 | `ibmcloud_api_key` | Your IBM Cloud API key |
-| `resource_group_name` | Your IBM Cloud resource group |
+| `resource_group_name` | Pre-filled: `txc-lab-2026` (do not change) |
 | `prefix` | A short unique prefix, e.g. `txc-lab-ao` |
-| `ssh_public_key` | Your SSH public key (contents of `~/.ssh/id_rsa.pub`) |
-| `region` | IBM Cloud region — leave as `us-south` unless instructed otherwise |
-| `zone` | Availability zone — leave as `us-south-1` unless instructed otherwise |
+| `ssh_key_name` | Pre-filled: `txc-lab-2026-shared-key` (do not change) |
+| `region` | IBM Cloud region — `us-east` (default) |
+| `zone` | Availability zone — `us-east-1` (default) |
 
 > **Important:** `terraform.tfvars` is listed in `.gitignore` and will **not** be committed to GitHub. Never share your API key.
 
@@ -118,7 +118,7 @@ Once complete, Terraform will output:
 Use the SSH command from the Terraform output to connect to your workload VSI from the Bastion Host:
 
 ```bash
-ssh -i ~/.ssh/id_rsa root@<workload_vsi_floating_ip>
+ssh -i ~/.ssh/txc-lab-key vpcuser@<workload_vsi_floating_ip>
 ```
 
 ---

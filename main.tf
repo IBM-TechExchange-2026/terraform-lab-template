@@ -46,12 +46,10 @@ resource "ibm_is_security_group_rule" "allow_all_outbound" {
 }
 
 ##############################################################################
-# SSH Key
+# SSH Key (Data source referencing pre-provisioned shared lab key)
 ##############################################################################
-resource "ibm_is_ssh_key" "lab_ssh_key" {
-  name           = "${var.prefix}-ssh-key"
-  public_key     = var.ssh_public_key
-  resource_group = data.ibm_resource_group.lab_rg.id
+data "ibm_is_ssh_key" "lab_ssh_key" {
+  name = var.ssh_key_name
 }
 
 ##############################################################################
@@ -70,7 +68,7 @@ resource "ibm_is_instance" "workload_vsi" {
     security_groups = [ibm_is_security_group.lab_sg.id]
   }
 
-  keys = [ibm_is_ssh_key.lab_ssh_key.id]
+  keys = [data.ibm_is_ssh_key.lab_ssh_key.id]
 }
 
 ##############################################################################

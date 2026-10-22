@@ -19,9 +19,10 @@ variable "prefix" {
   description = "Short prefix used to name all resources (e.g. your initials: 'txc-lab-<your-initials>')."
   type        = string
 }
-variable "ssh_public_key" {
-  description = "Shared lab SSH public key. Pre-populated in terraform.tfvars.template — do not change."
+variable "ssh_key_name" {
+  description = "Name of the pre-provisioned shared lab SSH key in IBM Cloud."
   type        = string
+  default     = "txc-lab-2026-shared-key"
 }
 
 

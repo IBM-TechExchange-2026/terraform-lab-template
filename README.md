@@ -90,7 +90,7 @@ This downloads the IBM Cloud Terraform provider.
 terraform plan
 ```
 
-Review the output and confirm the resources match what is expected (1 VPC, 1 subnet, 1 security group, 1 SSH key, 1 VSI, 1 floating IP).
+Review the output and confirm the resources match what is expected (1 VPC, 1 subnet, 1 security group with 2 rules, 1 VSI, 1 floating IP — 7 resources total).
 
 ---
 
